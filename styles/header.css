@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+.remon_trading_logo {
+  height: 60px;
+  width: 170px;
+  margin-left: 15px;
+}
+
+.header_nav, .header_nav li {
+  display: inline-block;
+}
+
+.header_nav {
+  list-style: none;
+  vertical-align: middle;
+}
+
+.header_nav li {
+  font-weight: 500;
+  margin-right: 15px;
+  color: red;
+}

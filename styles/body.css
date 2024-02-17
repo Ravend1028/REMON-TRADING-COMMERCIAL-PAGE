@@ -1,0 +1,349 @@
+/*START OF STORE BACKGROUND*/
+
+.overview {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: visible;
+  height: 300px;
+  margin-top: 85px;
+  background-color: brown;
+}
+
+.overview_informations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+.overview_text {
+  display: inline-block;
+  color: red;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(40) infinite;
+}
+
+@keyframes typewriter {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+.overview_description {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.embedded_yt {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+/*
+if image is used, instead of embedded yt links
+.remon_store_image {
+  z-index: 1;
+  height: 340px; 
+  border-radius: 5px;
+  transform: translateY(-6%);
+}
+*/
+
+.visit_now {
+  display: block;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: brown;
+  border: 1px solid black;
+  border-radius: 35px;
+  height: 50px;
+  width: 120px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.visit_now:hover {
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+}
+
+/*START OF CARDS MODS*/
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100px;
+  margin-top: 90px;
+  overflow: visible;
+  background-color: pink;
+}
+
+.first_card, .second_card, .third_card {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-30%);
+}
+
+.first_card h2, .second_card h2, .third_card h2 {
+  font-size: 13px;
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+
+.image_container_one img, .image_container_two img, .image_container_three img {
+  height: 220px;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s;
+}
+
+.image_container_one button, .image_container_two button, .image_container_three button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info_placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 100px;
+  margin-right: 12px;
+}
+
+.card_desc {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+.image_container_one img:hover {
+  transform: scale(1.05);
+}
+
+.image_container_two img:hover {
+  transform: scale(1.05);
+}
+
+.image_container_three img:hover {
+  transform: scale(1.05);
+}
+
+/*START OF LOC MODS*/
+
+.store_loc_info {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  margin-top: 115px;
+  overflow: visible;
+  background-color: brown;
+}
+
+.map_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.map_info p {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+.gmap {
+  border-radius: 10px;
+}
+
+/*START OF FB MODS*/
+
+.official_fb {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  height: 500px;
+  margin-top: 30px;
+  overflow: visible;
+  background-color: white;
+}
+
+.embedded_page {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fb_elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.docs_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 20px;
+  width: 900px;
+  height: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  background-color: brown;
+}
+
+.legal_docs_description {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+.legal_docs {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 150px;
+  width: 900px;
+  grid-template-columns:  200px 200px 200px 200px;
+  column-gap: 30px;
+  margin-top: 30px;
+  overflow: visible;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.legal_docs img {
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-12%);
+  transition: transform 0.15s;
+  border-radius: 20px;
+}
+
+.legal_docs img:hover {
+  transform: scale(1.35);
+  z-index: 1;
+}
+
+/*START OF SLIDER MODS*/
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  margin-top: 30px;
+  overflow: hidden;
+  align-self: center;
+  background-color: brown;
+}
+
+.cards_container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  gap: 10px;
+  width: 400px;
+}
+
+.cards_container::-webkit-scrollbar {
+  display: none;
+}
+
+.cards_item {
+  height: 270px;
+  width: 220px;
+  background-color: pink;
+  border-radius: 12px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid burlywood;
+}
+
+.cards_item img {
+  height: 200px;
+  width: 220px;
+  border-radius: 12px;
+}
+
+.cards_item h5 {
+  text-align: center;
+  color: black;
+}
+
+.prev_button, .next_button {
+  border-radius: 15px;
+  border: none;
+  margin: 10px 10px 10px 10px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  align-self: center;
+  background-color: brown;
+  color: white;
+  border: 1px solid burlywood;
+}
+
+.products_title {
+  width: 135px;
+}
+
+.products_title h1 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+}
+
+.temp_cards_container {
+  display: flex;
+}
+
+/*START OF CONTACT MODS*/
+
+.contacts_section {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  margin-top: 30px;
+  overflow: visible;
+  background-color: brown;
+}
