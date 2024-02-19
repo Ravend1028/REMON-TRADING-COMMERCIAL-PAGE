@@ -90,9 +90,7 @@ if image is used, instead of embedded yt links
   height: 300px;
   margin-top: 30px;
   overflow: visible;
-  background-image: url('images/bilibiran_img.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white;
 }
 
 .map_info {
@@ -105,7 +103,6 @@ if image is used, instead of embedded yt links
 .map_info p {
   font-size: 15px;
   font-weight: 400;
-  color: white;
 }
 
 .gmap {
@@ -146,13 +143,12 @@ if image is used, instead of embedded yt links
   height: 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  background-color: brown;
+  background-color: white;
 }
 
 .legal_docs_description {
   font-size: 15px;
   font-weight: 400;
-  color: white;
 }
 
 .legal_docs {
@@ -296,5 +292,5 @@ if image is used, instead of embedded yt links
   height: 300px;
   margin-top: 30px;
   overflow: visible;
-  background-color: brown;
+  background-color: white;
 }
