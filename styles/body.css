@@ -8,7 +8,7 @@
   overflow: visible;
   height: 300px;
   margin-top: 85px;
-  background-color: brown;
+  background-color: white;
 }
 
 .overview_informations {
@@ -42,7 +42,6 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
-  color: white;
 }
 
 .embedded_yt {
@@ -65,7 +64,7 @@ if image is used, instead of embedded yt links
   margin: auto;
   font-size: 15px;
   font-weight: 600;
-  color: brown;
+  color: red;
   border: 1px solid black;
   border-radius: 35px;
   height: 50px;
@@ -78,6 +77,59 @@ if image is used, instead of embedded yt links
   background-color: black;
   color: white;
   opacity: 0.9;
+}
+
+/*START OF ICONS MODS*/
+
+.sliding_icons {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: white;
+  white-space: nowrap;
+}
+
+.icons_container {
+  display: inline-block;
+  animation: 5s slide infinite linear;
+}
+
+.icons_container img {
+  height: 30px;
+  margin: 0 40px;
+}
+
+.sliding_icons:hover .icons_container {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  } 
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.sliding_icons::before, .sliding_icons::after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.sliding_icons::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.sliding_icons::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
 /*START OF LOC MODS*/
@@ -205,30 +257,6 @@ if image is used, instead of embedded yt links
   width: 400px;
 }
 
-/*
-.cards_container::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-  content: "";
-  z-index: 2;
-}
-
-.cards_container::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  content: "";
-  z-index: 2;
-}
-*/
-
 .cards_container::-webkit-scrollbar {
   display: none;
 }
@@ -263,9 +291,9 @@ if image is used, instead of embedded yt links
   width: 35px;
   text-align: center;
   align-self: center;
-  background-color: brown;
-  color: white;
-  border: 1px solid burlywood;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .products_title {
