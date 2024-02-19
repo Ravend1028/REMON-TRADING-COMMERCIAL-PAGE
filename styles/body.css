@@ -90,7 +90,9 @@ if image is used, instead of embedded yt links
   height: 300px;
   margin-top: 30px;
   overflow: visible;
-  background-color: brown;
+  background-image: url('images/bilibiran_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .map_info {
@@ -194,10 +196,11 @@ if image is used, instead of embedded yt links
   margin-top: 30px;
   overflow: hidden;
   align-self: center;
-  background-color: brown;
+  background-color: white;
 }
 
 .cards_container {
+  position: relative;
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
@@ -205,6 +208,30 @@ if image is used, instead of embedded yt links
   gap: 10px;
   width: 400px;
 }
+
+/*
+.cards_container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  content: "";
+  z-index: 2;
+}
+
+.cards_container::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  content: "";
+  z-index: 2;
+}
+*/
 
 .cards_container::-webkit-scrollbar {
   display: none;
@@ -253,7 +280,6 @@ if image is used, instead of embedded yt links
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  color: white;
 }
 
 .temp_cards_container {
