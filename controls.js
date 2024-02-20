@@ -1,4 +1,4 @@
-const copy = document.querySelector(".icons_container").cloneNode(true);
+var copy = document.querySelector(".icons_container").cloneNode(true);
 document.querySelector(".sliding_icons").appendChild(copy);
 
 /*

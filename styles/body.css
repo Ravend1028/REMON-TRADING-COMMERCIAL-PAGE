@@ -1,4 +1,4 @@
-/*START OF STORE BACKGROUND*/
+/*START OF STORE ABOUT MODS*/
 
 .overview {
   display: flex;
@@ -65,6 +65,7 @@ if image is used, instead of embedded yt links
   font-size: 15px;
   font-weight: 600;
   color: red;
+  background-color: white;
   border: 1px solid black;
   border-radius: 35px;
   height: 50px;
@@ -132,6 +133,45 @@ if image is used, instead of embedded yt links
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
+/*START OF CUSTOMERS MODS*/
+
+.customers_sample {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: visible;
+  height: 600px;
+  margin-top: 30px;
+  background-color: black;
+}
+
+.customers_title h1 {
+  color: white;
+  text-align: center;
+}
+
+.customers_container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  gap: 15px;
+}
+
+.customers_container img {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.15s;
+}
+
+.customers_container img:hover {
+  transform: scale(1.15);
+  z-index: 1;
+}
+
 /*START OF LOC MODS*/
 
 .store_loc_info {
@@ -195,12 +235,13 @@ if image is used, instead of embedded yt links
   height: 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  background-color: white;
+  background-color: black;
 }
 
 .legal_docs_description {
   font-size: 15px;
   font-weight: 400;
+  color: white;
 }
 
 .legal_docs {
@@ -264,22 +305,22 @@ if image is used, instead of embedded yt links
 .cards_item {
   height: 270px;
   width: 220px;
-  background-color: pink;
+  background-color: black;
   border-radius: 12px;
   display: inline-block;
   vertical-align: top;
-  border: 1px solid burlywood;
 }
 
 .cards_item img {
   height: 200px;
   width: 220px;
   border-radius: 12px;
+  border: 1px solid white;
 }
 
 .cards_item h5 {
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .prev_button, .next_button {

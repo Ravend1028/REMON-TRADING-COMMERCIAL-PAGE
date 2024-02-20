@@ -6,7 +6,7 @@ header {
   left: 0;
   right: 0;
   background-color: white;
-  z-index: 2;
+  z-index: 10;
 }
 
 .remon_trading_logo {
