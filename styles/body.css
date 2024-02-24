@@ -351,15 +351,41 @@ if image is used, instead of embedded yt links
   display: flex;
 }
 
-/*START OF CONTACT MODS*/
+/*START OF ICON ADDS MODS*/
 
-.contacts_section {
+.services_icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  gap: 100px;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: 300px;
   margin-top: 30px;
-  overflow: visible;
+  background-color: black;
+}
+
+.warehouse_icon, .discount_icon, .quality_icon, .message_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.warehouse_icon p, .discount_icon p, .quality_icon p, .message_icon p {
+  color: white;
+  font-size: 13px;
+}
+
+/*START OF CONTACT MODS*/
+
+.contact_section {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  margin-top: 30px;
   background-color: white;
 }
