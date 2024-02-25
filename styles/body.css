@@ -74,63 +74,43 @@ if image is used, instead of embedded yt links
   transition: background-color 0.15s;
 }
 
+.visit_now a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .visit_now:hover {
   background-color: black;
   color: white;
   opacity: 0.9;
 }
 
-/*START OF ICONS MODS*/
+/*START OF ICON ADDS MODS*/
 
-.sliding_icons {
+.services_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 100px;
+  border: none;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+  height: 120px;
   margin-top: 30px;
-  position: relative;
-  overflow: hidden;
-  padding: 20px 0;
   background-color: white;
-  white-space: nowrap;
 }
 
-.icons_container {
-  display: inline-block;
-  animation: 5s slide infinite linear;
+.warehouse_icon, .discount_icon, .quality_icon, .message_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.icons_container img {
-  height: 30px;
-  margin: 0 40px;
-}
-
-.sliding_icons:hover .icons_container {
-  animation-play-state: paused;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  } 
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.sliding_icons::before, .sliding_icons::after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.sliding_icons::before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-}
-
-.sliding_icons::after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+.warehouse_icon p, .discount_icon p, .quality_icon p, .message_icon p {
+  font-size: 13px;
+  margin-bottom: 0;
 }
 
 /*START OF CUSTOMERS MODS*/
@@ -281,7 +261,7 @@ if image is used, instead of embedded yt links
   align-items: center;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  height: 400px;
+  height: 350px;
   margin-top: 30px;
   overflow: hidden;
   align-self: center;
@@ -351,41 +331,142 @@ if image is used, instead of embedded yt links
   display: flex;
 }
 
-/*START OF ICON ADDS MODS*/
+/*START OF ICONS MODS*/
 
-.services_icons {
+.sliding_icons {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: silver;
+  white-space: nowrap;
+}
+
+.icons_container {
+  display: inline-block;
+  animation: 5s slide infinite linear;
+}
+
+.icons_container img {
+  height: 30px;
+  margin: 0 40px;
+}
+
+.sliding_icons:hover .icons_container {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  } 
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.sliding_icons::before, .sliding_icons::after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.sliding_icons::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.sliding_icons::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/*START OF OUTRO PRODUCTS*/
+
+.outro_section {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 100px;
+  align-items: center;
+  justify-content: space-around;
   border: none;
+  overflow: visible;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: 300px;
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: black;
 }
 
-.warehouse_icon, .discount_icon, .quality_icon, .message_icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.outro_section img {
+  height: 350px; 
+  border-radius: 5px;
+  transform: translateY(0%);
 }
 
-.warehouse_icon p, .discount_icon p, .quality_icon p, .message_icon p {
+.outro_section_description {
+  width: 500px;
+}
+
+.outro_section_description p {
   color: white;
-  font-size: 13px;
 }
 
 /*START OF CONTACT MODS*/
 
 .contact_section {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  height: 400px;
-  margin-top: 30px;
+  height: 300px;
+  margin-top: 50px;
   background-color: white;
+  padding: 20px 0;
+}
+
+.connect_to_us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+
+.buttons_container {
+  width: 230px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.fb_button, .email_button, .youtube_button {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border: none;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+.fb_button {
+  background-color: #0165E1;
+}
+
+.email_button {
+  background-color: black;
+}
+
+.youtube_button {
+  background-color: #FF0000;
+}
+
+.buttons_container button:hover {
+  opacity: 0.5;
+}
+
+.programmer_note {
+  font-size: 10px;
 }
