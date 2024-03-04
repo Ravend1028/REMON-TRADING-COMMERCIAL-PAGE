@@ -29,3 +29,20 @@ header {
   margin-right: 15px;
   color: red;
 }
+
+.burger_menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: red;
+}
+
+
